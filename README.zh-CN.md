@@ -137,6 +137,9 @@ python main_api.py
 
 ## 如何请求 API
 
+调用API接口，测试是否成功( 替换AUTH_SECRET，{crawler_domain} ),使用Git bash，Power shell，或Postman等工具发送curl命令
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer AUTH_SECRET" -d '{"url": "https://tap4.ai", "tags": [ "ai-detector","chatbot","text-writing","image","code-it"]}' {crawler_domain}/site/crawl
+
 可以使用 curl 发送 Post 请求验证 API 是否可用。
 请求参数说明:
 
